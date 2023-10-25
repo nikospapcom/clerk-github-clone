@@ -9,17 +9,10 @@ export const Sidebar = async ({ children }: PropsWithChildren) => {
   return (
     <div className="sticky top-0 left-0 h-screen w-[280px] p-8 pr-6 transition-all flex flex-col justify-between bg-gray-100">
       <div>
-        <div className="flex justify-between">
-          <div>{user?.firstName && <p>Welcome {user?.firstName}</p>}</div>
+        <div className="flex justify-between mb-4">
+          <OrganizationSwitcher />
           <UserButton afterSignOutUrl="/" />
         </div>
-        <OrganizationSwitcher
-          appearance={{
-            elements: {
-              rootBox: "my-4",
-            },
-          }}
-        />
 
         <div className="text-sm text-gray-400 font-semibold mb-2">General</div>
         <ul>
