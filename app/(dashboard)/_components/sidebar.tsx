@@ -33,6 +33,14 @@ export const Sidebar = async ({ children }: PropsWithChildren) => {
           </li>
           <li>
             <Link
+              href="/app/repositories"
+              className="text-gray-800 text-sm block w-full hover:bg-gray-200 rounded p-2"
+            >
+              Repositories
+            </Link>
+          </li>
+          <li>
+            <Link
               href="/app/organization-profile"
               className="text-gray-800 text-sm block w-full hover:bg-gray-200 rounded p-2"
             >
