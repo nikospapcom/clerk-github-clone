@@ -1,11 +1,8 @@
-import { cn } from "@/utils/cn";
-import { OrganizationSwitcher, UserButton, currentUser } from "@clerk/nextjs";
+import { OrganizationSwitcher, UserButton } from "@clerk/nextjs";
 import Link from "next/link";
 import { PropsWithChildren } from "react";
 
 export const Sidebar = async ({ children }: PropsWithChildren) => {
-  const user = await currentUser();
-
   return (
     <div className="sticky top-0 left-0 h-screen w-[280px] p-8 pr-6 transition-all flex flex-col justify-between bg-gray-100">
       <div>
